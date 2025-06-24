@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pkl
+*.h5
+*.pt
+*.onnx
+*.model
+
+# Virtual envs
+cleanenv/
+.env
+*.env
+*.env.*
+
+# Large data
+artvee/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# Node/React
+node_modules/
+build/
+dist/
+.env.local
+.env.development
+.env.production
+
+# System
+.DS_Store
+Thumbs.db
+*.log

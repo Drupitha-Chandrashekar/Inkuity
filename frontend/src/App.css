@@ -1,0 +1,91 @@
+/* src/App.css */
+body, html, #root, .app-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: black;
+}
+
+.animated-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000000, #0a0f4c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  z-index: 2;
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #38bdf8, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #3b82f6, #9333ea);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
+}
+
+/* Square and rectangle animation */
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveGrid 40s linear infinite;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+@keyframes moveGrid {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 100px 100px, 100px 0, 0 100px;
+  }
+}
