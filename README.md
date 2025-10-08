@@ -25,7 +25,6 @@ It integrates **Stable Diffusion with ControlNet** for sketch-to-image generatio
 
 ### **Backend**
 - **FastAPI** – for lightweight, high-performance REST APIs  
-- **MongoDB / Amazon S3** – for storing sketches, generated images, and metadata  
 
 ### **Machine Learning & Image Processing**
 - **Stable Diffusion + ControlNet** – for sketch-to-image generation  
@@ -44,7 +43,6 @@ The system follows a **microservices-based architecture**:
 2. **Backend (FastAPI)** – processes API requests and routes data to ML modules.  
 3. **Sketch-to-Image Service** – runs Stable Diffusion + ControlNet to generate images.  
 4. **Art Theft Detection Module** – extracts ResNet50 embeddings, stores them in FAISS, and compares new uploads for similarity.  
-5. **Database Layer** – MongoDB or S3 for image storage and retrieval.
 
 ---
 
@@ -60,3 +58,35 @@ The system follows a **microservices-based architecture**:
 | **Dependencies** | Python ≥3.8, Node.js ≥16 |
 
 ---
+
+## 📸 Results
+
+### 🖌️ Doodle to Realistic Image Generation  
+Using **Stable Diffusion and ControlNet**
+
+| Sketch | Generated Image |
+|--------|-----------------|
+| ![Sketch](results/sketch_sample.png) | ![Generated Image](results/generated_sample.png) |
+
+---
+
+### 🔍 Art Theft Detection  
+Detects visually similar artworks using **FAISS cosine similarity**
+
+| Uploaded Image | Similar Artwork Detected |
+|----------------|--------------------------|
+| ![Uploaded Image](results/uploaded_image.png) | ![Similar Artwork](results/similar_artwork.png) |
+
+---
+
+## 🧾 License  
+This project is released under the **MIT License**.
+
+---
+
+## ✨ Contributors  
+- **[Drupitha Chandrashekar]** – Developer & Researcher
+- **[Chandana N C]** – Developer & Researcher
+- **[Keerthana S]** – Developer & Researcher
+- **[Monica D]** – Developer & Researcher
+
