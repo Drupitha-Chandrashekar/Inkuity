@@ -73,9 +73,8 @@ Using **Stable Diffusion and ControlNet**
 ### 🔍 Art Theft Detection  
 Detects visually similar artworks using **FAISS cosine similarity**
 
-
- !(results/img3.jpg) 
- !(results/img4.jpg) 
+![Example 1](results/img3.jpg)
+![Example 2](results/img4.jpg)
 
 ---
 
