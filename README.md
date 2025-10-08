@@ -66,16 +66,16 @@ Using **Stable Diffusion and ControlNet**
 
 | Sketch | Generated Image |
 |--------|-----------------|
-| ![Sketch](results/sketch_sample.png) | ![Generated Image](results/generated_sample.png) |
+| ![Sketch](results/img1.jpg) | ![Generated Image](results/img2.jpg) |
 
 ---
 
 ### 🔍 Art Theft Detection  
 Detects visually similar artworks using **FAISS cosine similarity**
 
-| Uploaded Image | Similar Artwork Detected |
-|----------------|--------------------------|
-| ![Uploaded Image](results/uploaded_image.png) | ![Similar Artwork](results/similar_artwork.png) |
+
+ !(results/img3.jpg) 
+ !(results/img4.jpg) 
 
 ---
 
